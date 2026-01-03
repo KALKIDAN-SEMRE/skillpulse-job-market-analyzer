@@ -11,7 +11,7 @@ from telethon import TelegramClient
 from telethon.tl.types import Message
 from sqlalchemy.orm import Session
 
-from app.database import SessionLocal
+from app.database import SessionLocal, init_db
 from app.models import JobPost, Skill
 from app.extractor import extract_salary, extract_skills, extract_job_title
 
@@ -170,6 +170,9 @@ async def collect_jobs(channel_usernames: List[str], messages_per_channel: int =
             "TELEGRAM_API_ID and TELEGRAM_API_HASH must be set in .env file. "
             "Get them from https://my.telegram.org"
         )
+    
+    # Initialize database (create tables if they don't exist)
+    init_db()
     
     # Create Telegram client
     client = TelegramClient(SESSION_NAME, int(API_ID), API_HASH)

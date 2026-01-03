@@ -22,7 +22,7 @@ if __name__ == "__main__":
         print("ERROR: No Telegram channels specified!")
         print("Please edit run_collector.py and add channel usernames to TELEGRAM_CHANNELS list.")
         print("\nExample:")
-        print('  TELEGRAM_CHANNELS = ["channel1", "channel2"]')
+        print('  TELEGRAM_CHANNELS = ["DagmawiBabiJobs"]')
         exit(1)
     
     print(f"Starting collection from {len(TELEGRAM_CHANNELS)} channel(s)...")
