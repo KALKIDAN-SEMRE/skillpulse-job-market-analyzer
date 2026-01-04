@@ -202,13 +202,5 @@ async def collect_jobs(channel_usernames: List[str], messages_per_channel: int =
         print("Disconnected from Telegram")
 
 
-def run_collector(channel_usernames: List[str], messages_per_channel: int = 100):
-    """
-    Synchronous wrapper to run the async collector.
-    
-    Args:
-        channel_usernames: List of channel usernames (without @)
-        messages_per_channel: Number of messages to fetch per channel
-    """
-    asyncio.run(collect_jobs(channel_usernames, messages_per_channel))
-
+def run_collector(*, channels: List[str], limit: int = 100):
+    asyncio.run(collect_jobs(channels, limit))

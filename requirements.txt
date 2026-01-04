@@ -5,12 +5,18 @@ uvicorn[standard]==0.24.0
 # Database
 sqlalchemy==2.0.23
 
-# Telegram client
+# Telegram client (for collector)
 telethon==1.34.0
+
+# Telegram bot (for Day 2)
+python-telegram-bot==20.7
+
+# Data analysis (for Day 2)
+pandas==2.1.4
 
 # Environment variables
 python-dotenv==1.0.0
 
-# Data validation
+# Data validation (required by FastAPI)
 pydantic==2.5.0
 
