@@ -1,22 +1,39 @@
-# FastAPI and web server
-fastapi==0.104.1
-uvicorn[standard]==0.24.0
-
-# Database
-sqlalchemy==2.0.23
-
-# Telegram client (for collector)
-telethon==1.34.0
-
-# Telegram bot (for Day 2)
-python-telegram-bot==20.7
-
-# Data analysis (for Day 2)
-pandas==2.1.4
-
-# Environment variables
-python-dotenv==1.0.0
-
-# Data validation (required by FastAPI)
-pydantic==2.5.0
-
+annotated-doc==0.0.4
+annotated-types==0.7.0
+anyio==4.12.0
+certifi==2025.11.12
+click==8.3.1
+colorama==0.4.6
+contourpy==1.3.3
+cycler==0.12.1
+fastapi==0.128.0
+fonttools==4.61.1
+greenlet==3.3.0
+h11==0.16.0
+httpcore==1.0.9
+httpx==0.28.1
+idna==3.11
+kiwisolver==1.4.9
+matplotlib==3.10.8
+numpy==2.4.0
+packaging==25.0
+pandas==2.3.3
+pillow==12.1.0
+pyaes==1.6.1
+pyasn1==0.6.1
+pydantic==2.12.5
+pydantic_core==2.41.5
+pyparsing==3.3.1
+python-dateutil==2.9.0.post0
+python-dotenv==1.2.1
+python-telegram-bot==22.5
+pytz==2025.2
+rsa==4.9.1
+six==1.17.0
+SQLAlchemy==2.0.45
+starlette==0.50.0
+Telethon==1.42.0
+typing-inspection==0.4.2
+typing_extensions==4.15.0
+tzdata==2025.3
+uvicorn==0.40.0

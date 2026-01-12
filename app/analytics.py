@@ -334,3 +334,26 @@ def get_skill_info(skill_name: str, db: Session = None) -> Optional[Dict]:
         if close_db:
             db.close()
 
+
+def get_all_skills(db: Session = None) -> List[str]:
+    """
+    Get list of all skill names.
+    
+    Args:
+        db: Database session (creates new one if not provided)
+        
+    Returns:
+        List of skill names as strings
+    """
+    if db is None:
+        db = SessionLocal()
+        close_db = True
+    else:
+        close_db = False
+    
+    try:
+        skills = db.query(Skill).all()
+        return [skill.name for skill in skills]
+    finally:
+        if close_db:
+            db.close()
