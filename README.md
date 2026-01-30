@@ -1,4 +1,4 @@
-# SkillPulse — Job Market Analyzer
+# SkillPulse - Job Market Analyzer
 
 SkillPulse collects public Telegram job posts and extracts structured insights (job titles, salaries, and skills) to help identify in-demand and high-paying technical skills.
 
@@ -166,19 +166,19 @@ uvicorn app.main:app --reload --port 8001
 
 ---
 
-## ✅ Day 1 Deliverables
+##  Day 1 Deliverables
 
-- ✅ FastAPI backend skeleton
-- ✅ SQLite database with SQLAlchemy
-- ✅ Database models (JobPost, Skill, JobSkill)
-- ✅ Telegram collector using Telethon
-- ✅ Data extraction (salary, skills, job title)
-- ✅ API endpoints for viewing data
-- ✅ Comprehensive documentation
+-  FastAPI backend skeleton
+-  SQLite database with SQLAlchemy
+-  Database models (JobPost, Skill, JobSkill)
+-  Telegram collector using Telethon
+-  Data extraction (salary, skills, job title)
+-  API endpoints for viewing data
+-  Comprehensive documentation
 
 ---
 
-## 🚀 Next Steps (Future Days)
+##  Next Steps (Future Days)
 
 - ML-based skill extraction
 - Salary normalization and analysis
@@ -189,11 +189,11 @@ uvicorn app.main:app --reload --port 8001
 
 ---
 
-## 📄 License
+##  License
 
 [Add your license here]
 
-## 👥 Contributing
+##  Contributing
 
 [Add contributing guidelines here]
 
