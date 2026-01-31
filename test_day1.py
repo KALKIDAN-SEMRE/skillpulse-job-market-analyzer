@@ -1,9 +1,3 @@
-"""
-Day 1 Verification & Testing Script
-Run this script to verify your Day 1 implementation.
-
-Usage: python test_day1.py
-"""
 import os
 import sys
 import sqlite3
